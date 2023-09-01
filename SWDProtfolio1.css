@@ -1,0 +1,77 @@
+/*CSS code for screens wider than 768px */
+.some-class {
+    font-size: 16px;
+}
+
+/* Make all images fit mobile devices */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Base styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16 px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: none;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* Media quieries */
+@media screen and (min-width: 768px) {
+    /* Header styles */
+    header {
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    .mobile-meny {
+        display: none;
+    }
+}
